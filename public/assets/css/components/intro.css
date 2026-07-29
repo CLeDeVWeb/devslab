@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Intro
+   ========================================================================== */
+
+.dl-intro {
+    padding: 8rem 0 6rem;
+    text-align: center;
+}
+
+.dl-intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dl-intro-version {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+
+    padding: .40rem 1rem;
+
+    margin-bottom: 2rem;
+
+    border: 1px solid var(--dl-color-border);
+    border-radius: 999px;
+
+    background: var(--dl-color-surface);
+
+    font-size: .90rem;
+    font-weight: 500;
+}
+
+.dl-intro-title {
+    margin-bottom: 1rem;
+
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.dl-intro-subtitle {
+    margin-bottom: 2rem;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+
+    color: var(--dl-color-text-light);
+}
+
+.dl-intro-description {
+    max-width: 700px;
+
+    margin: 0 auto 3rem;
+
+    font-size: 1.10rem;
+    line-height: 1.8;
+
+    color: var(--dl-color-text-light);
+}
+
+.dl-intro-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.dl-intro-title {
+
+    background: linear-gradient(
+        90deg,
+        var(--dl-color-primary),
+        #6f7bf7
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+
+    .dl-intro {
+        padding: 5rem 0;
+    }
+
+    .dl-intro-actions {
+        flex-direction: column;
+    }
+
+    .dl-intro-actions .dl-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}

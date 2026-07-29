@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Project Card
+   ========================================================================== */
+
+.dl-project-card {
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    padding: var(--dl-space-xl);
+
+    background: var(--dl-color-surface);
+
+    border: 1px solid var(--dl-color-border);
+    border-radius: var(--dl-radius-lg);
+
+    box-shadow: var(--dl-shadow-sm);
+
+    transition:
+        transform var(--dl-transition-fast),
+        border-color var(--dl-transition-fast),
+        box-shadow var(--dl-transition-fast);
+
+}
+
+.dl-project-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color: var(--dl-color-primary);
+
+    box-shadow: var(--dl-shadow-md);
+    /* ==========================================================================
+   Header
+   ========================================================================== */
+
+    .dl-project-card-header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        gap: var(--dl-space-lg);
+
+        margin-bottom: var(--dl-space-lg);
+
+    }
+
+    .dl-project-card-info {
+
+        display: flex;
+        align-items: center;
+
+        gap: var(--dl-space-md);
+
+        flex: 1;
+
+    }
+
+    /* ==========================================================================
+   Icon
+   ========================================================================== */
+
+    .dl-project-card-icon {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-shrink: 0;
+
+        width: 3.5rem;
+        height: 3.5rem;
+
+        border-radius: var(--dl-radius-md);
+
+        background: var(--dl-color-primary-light);
+
+        color: var(--dl-color-primary);
+
+        font-size: var(--dl-font-size-xl);
+
+    }
+
+    /* ==========================================================================
+   Title
+   ========================================================================== */
+
+    .dl-project-card-title {
+
+        margin: 0 0 var(--dl-space-xs);
+
+        font-size: var(--dl-font-size-lg);
+        font-weight: var(--dl-font-weight-bold);
+
+    }
+
+    .dl-project-card-version {
+
+        color: var(--dl-color-text-muted);
+
+        font-size: var(--dl-font-size-sm);
+
+    }
+
+    /* ==========================================================================
+   Body
+   ========================================================================== */
+
+    .dl-project-card-body {
+
+        flex: 1;
+
+    }
+
+    .dl-project-card-description {
+
+        margin: 0;
+
+        color: var(--dl-color-text-muted);
+
+        line-height: 1.6;
+
+    }
+
+    /* ==========================================================================
+   Footer
+   ========================================================================== */
+
+    .dl-project-card-footer {
+
+        margin-top: var(--dl-space-xl);
+
+    }
+
+    .dl-project-card-tags {
+
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: var(--dl-space-sm);
+
+        margin-bottom: var(--dl-space-lg);
+
+    }
+
+    .dl-project-card-actions {
+
+        display: flex;
+        justify-content: flex-end;
+
+    }
+}

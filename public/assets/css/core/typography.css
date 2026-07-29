@@ -1,0 +1,308 @@
+/******************************************************************************
+ * DevLab
+ * File : typography.css
+ * Role : Typographie globale
+ ******************************************************************************/
+
+/* ==========================================================================
+   Titres principaux
+   ========================================================================== */
+
+h1{
+
+    font-size:2rem;
+    font-weight:700;
+    line-height:1.2;
+
+    color:var(--dl-text);
+
+}
+
+h2{
+
+    font-size:1.50rem;
+    font-weight:600;
+    line-height:1.3;
+
+    color:var(--dl-text);
+
+}
+
+h3{
+
+    font-size:1.25rem;
+    font-weight:600;
+    line-height:1.3;
+
+}
+
+h4{
+
+    font-size:1.10rem;
+    font-weight:600;
+
+}
+
+h5{
+
+    font-size:1rem;
+    font-weight:600;
+
+}
+
+h6{
+
+    font-size:.95rem;
+    font-weight:600;
+
+}
+
+
+/* ==========================================================================
+   Paragraphes
+   ========================================================================== */
+
+p{
+
+    color:var(--dl-text-light);
+
+    line-height:1.7;
+
+}
+
+
+/* ==========================================================================
+   Labels
+   ========================================================================== */
+
+label{
+
+    display:block;
+
+    margin-bottom:.35rem;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    color:var(--dl-text-light);
+
+    text-transform:uppercase;
+
+    letter-spacing:.04em;
+
+}
+
+
+/* ==========================================================================
+   Textes
+   ========================================================================== */
+
+.dl-text-xs{
+
+    font-size:.75rem;
+
+}
+
+.dl-text-sm{
+
+    font-size:.875rem;
+
+}
+
+.dl-text{
+
+    font-size:1rem;
+
+}
+
+.dl-text-lg{
+
+    font-size:1.125rem;
+
+}
+
+.dl-text-xl{
+
+    font-size:1.35rem;
+
+}
+
+.dl-text-muted{
+
+    color:var(--dl-text-light);
+
+}
+
+.dl-text-primary{
+
+    color:var(--dl-primary);
+
+}
+
+.dl-text-success{
+
+    color:var(--dl-success);
+
+}
+
+.dl-text-warning{
+
+    color:var(--dl-warning);
+
+}
+
+.dl-text-danger{
+
+    color:var(--dl-danger);
+
+}
+
+
+/* ==========================================================================
+   Poids
+   ========================================================================== */
+
+.dl-fw-light{
+
+    font-weight:300;
+
+}
+
+.dl-fw-normal{
+
+    font-weight:400;
+
+}
+
+.dl-fw-medium{
+
+    font-weight:500;
+
+}
+
+.dl-fw-semibold{
+
+    font-weight:600;
+
+}
+
+.dl-fw-bold{
+
+    font-weight:700;
+
+}
+
+
+/* ==========================================================================
+   Alignement
+   ========================================================================== */
+
+.dl-text-left{
+
+    text-align:left;
+
+}
+
+.dl-text-center{
+
+    text-align:center;
+
+}
+
+.dl-text-right{
+
+    text-align:right;
+
+}
+
+
+/* ==========================================================================
+   Titres de composants
+   ========================================================================== */
+
+.dl-card-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.75rem;
+
+    font-size:1.25rem;
+
+    font-weight:600;
+
+}
+
+.dl-card-title i{
+
+    color:var(--dl-primary);
+
+}
+
+.dl-section-title{
+
+    margin-bottom:1.75rem;
+
+    font-size:1.70rem;
+
+    font-weight:700;
+
+}
+
+.dl-section-subtitle{
+
+    margin-top:.35rem;
+
+    color:var(--dl-text-light);
+
+    font-size:.95rem;
+
+}
+
+
+/* ==========================================================================
+   Informations
+   ========================================================================== */
+
+.dl-info label{
+
+    margin-bottom:.40rem;
+
+}
+
+.dl-info div{
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    color:var(--dl-text);
+
+}
+
+
+/* ==========================================================================
+   Liens
+   ========================================================================== */
+
+.dl-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.40rem;
+
+    color:var(--dl-primary);
+
+    font-weight:600;
+
+}
+
+.dl-link:hover{
+
+    color:var(--dl-primary-dark);
+
+}

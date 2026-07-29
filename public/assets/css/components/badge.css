@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Badge
+   ========================================================================== */
+
+.dl-badge {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--dl-space-xs) var(--dl-space-md);
+
+    border: 1px solid transparent;
+    border-radius: var(--dl-radius-pill);
+
+    font-size: var(--dl-font-size-xs);
+    font-weight: var(--dl-font-weight-semibold);
+    line-height: 1;
+
+    white-space: nowrap;
+
+}
+
+/* ==========================================================================
+   Variants
+   ========================================================================== */
+
+.dl-badge-primary {
+
+    color: var(--dl-color-primary);
+    background: var(--dl-color-primary-light);
+    border-color: var(--dl-color-primary-border);
+
+}
+
+.dl-badge-success {
+
+    color: var(--dl-color-success);
+    background: var(--dl-color-success-light);
+    border-color: var(--dl-color-success-border);
+
+}
+
+.dl-badge-warning {
+
+    color: var(--dl-color-warning);
+    background: var(--dl-color-warning-light);
+    border-color: var(--dl-color-warning-border);
+
+}
+
+.dl-badge-danger {
+
+    color: var(--dl-color-danger);
+    background: var(--dl-color-danger-light);
+    border-color: var(--dl-color-danger-border);
+
+}
+
+.dl-badge-info {
+
+    color: var(--dl-color-info);
+    background: var(--dl-color-info-light);
+    border-color: var(--dl-color-info-border);
+
+}
+
+.dl-badge-neutral {
+
+    color: var(--dl-color-text);
+    background: var(--dl-color-surface-alt);
+    border-color: var(--dl-color-border);
+
+}

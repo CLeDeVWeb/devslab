@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Tag
+   ========================================================================== */
+
+.dl-tag {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--dl-space-xs) var(--dl-space-md);
+
+    border: 1px solid var(--dl-color-border);
+    border-radius: var(--dl-radius-pill);
+
+    background: var(--dl-color-surface-alt);
+    color: var(--dl-color-text);
+
+    font-size: var(--dl-font-size-xs);
+    font-weight: var(--dl-font-weight-medium);
+
+    line-height: 1;
+    white-space: nowrap;
+
+    transition:
+        color var(--dl-transition-fast),
+        background-color var(--dl-transition-fast),
+        border-color var(--dl-transition-fast);
+
+}
+
+.dl-tag:hover {
+
+    background: var(--dl-color-primary-light);
+    border-color: var(--dl-color-primary-border);
+    color: var(--dl-color-primary);
+
+}

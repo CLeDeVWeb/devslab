@@ -1,0 +1,44 @@
+/**
+ * ============================================================
+ * DevLab Design System
+ * Fichier : devlab.css
+ * Description : Point d'entrée principal
+ * ============================================================
+ */
+
+/*==========================================================
+  Core (respecter l'ordre des imports)
+==========================================================*/
+
+@import url("./core/variables.css");/* doit être chargé en premier (--dl-*) */
+@import url("./core/root.css");/* utilise les variables */
+@import url("./core/reset.css");/* remet le navigateur à zéro */
+@import url("./core/typography.css");/* définit les textes. */
+@import url("./core/layout.css");/* construit la page. */
+@import url("./core/utilities.css");/* ajoute les classes utilitaires. */
+@import url("./core/animations.css"); /* termine */
+
+/*==========================================================
+  Components
+==========================================================*/
+@import url("./components/navbar.css");
+
+@import url("./components/container.css");
+@import url("./components/grid.css");
+@import url("./components/layout.css");
+
+@import url("./components/card.css");
+@import url("./components/button.css");
+@import url("./components/form.css");
+@import url("./components/badge.css");
+@import url("./components/tag.css");
+
+@import url("./components/navbar.css");
+@import url("./components/modal.css");
+@import url("./components/table.css");
+
+@import url("./components/sections.css");
+@import url("./components/intro.css");
+
+@import url("./components/projects.css");
+@import url("./components/project-card.css");

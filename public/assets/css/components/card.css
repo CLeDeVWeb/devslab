@@ -1,0 +1,46 @@
+/* ========================================================================== */
+/* Card */
+/* ========================================================================== */
+
+.dl-card {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    background: var(--dl-color-surface);
+    border: 1px solid var(--dl-color-border);
+
+    border-radius: var(--dl-radius-lg);
+
+    box-shadow: var(--dl-shadow-sm);
+
+    transition:
+        transform var(--dl-transition-fast),
+        box-shadow var(--dl-transition-fast);
+}
+
+.dl-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--dl-shadow-md);
+}
+
+.dl-card-header {
+    padding: var(--dl-space-lg);
+
+    border-bottom: 1px solid var(--dl-color-border);
+}
+
+.dl-card-body {
+    flex: 1;
+
+    padding: var(--dl-space-lg);
+}
+
+.dl-card-footer {
+    padding: var(--dl-space-lg);
+
+    border-top: 1px solid var(--dl-color-border);
+
+    background: var(--dl-color-surface-alt);
+}

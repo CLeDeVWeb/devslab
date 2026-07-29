@@ -1,0 +1,124 @@
+/* ========================================================================== */
+/* Page */
+/* ========================================================================== */
+
+.dl-page {
+    min-height: 100vh;
+}
+
+.dl-section {
+    padding: var(--dl-space-2xl) 0;
+}
+
+.dl-section-sm {
+    padding: var(--dl-space-xl) 0;
+}
+
+/* ========================================================================== */
+/* Containers */
+/* ========================================================================== */
+
+.dl-container {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: var(--dl-space-lg);
+}
+
+/* ========================================================================== */
+/* Flex */
+/* ========================================================================== */
+
+.dl-flex {
+    display: flex;
+}
+
+.dl-inline-flex {
+    display: inline-flex;
+}
+
+.dl-flex-column {
+    flex-direction: column;
+}
+
+.dl-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dl-flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dl-flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* ========================================================================== */
+/* Stack */
+/* ========================================================================== */
+
+.dl-stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dl-space-md);
+}
+
+.dl-stack-sm {
+    gap: var(--dl-space-sm);
+}
+
+.dl-stack-lg {
+    gap: var(--dl-space-lg);
+}
+
+/* ========================================================================== */
+/* Cluster */
+/* ========================================================================== */
+
+.dl-cluster {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--dl-space-md);
+}
+
+/* ========================================================================== */
+/* Grid */
+/* ========================================================================== */
+
+.dl-grid {
+    display: grid;
+    gap: var(--dl-space-lg);
+}
+
+.dl-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dl-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dl-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* ========================================================================== */
+/* Responsive */
+/* ========================================================================== */
+
+@media (max-width: 992px) {
+
+    .dl-grid-2,
+    .dl-grid-3,
+    .dl-grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+}

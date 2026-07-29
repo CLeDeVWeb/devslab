@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+:root {
+
+  /* Primary */
+
+  --dl-color-primary: #2563eb;
+  --dl-color-primary-hover: #1d4ed8;
+  --dl-color-primary-light: #dbeafe;
+  --dl-color-primary-border: #93c5fd;
+  --dl-color-primary-contrast: #ffffff;
+
+  /* Success */
+
+  --dl-color-success: #16a34a;
+  --dl-color-success-light: #dcfce7;
+  --dl-color-success-border: #86efac;
+
+  /* Warning */
+
+  --dl-color-warning: #d97706;
+  --dl-color-warning-light: #fef3c7;
+  --dl-color-warning-border: #fcd34d;
+
+  /* Danger */
+
+  --dl-color-danger: #dc2626;
+  --dl-color-danger-light: #fee2e2;
+  --dl-color-danger-border: #fca5a5;
+
+  /* Info */
+
+  --dl-color-info: #0284c7;
+  --dl-color-info-light: #e0f2fe;
+  --dl-color-info-border: #7dd3fc;
+
+  /* Surface */
+
+  --dl-color-background: #f8fafc;
+  --dl-color-surface: #ffffff;
+  --dl-color-surface-alt: #f1f5f9;
+
+  /* Border */
+
+  --dl-color-border: #e2e8f0;
+
+  /* Text */
+
+  --dl-color-text: #1e293b;
+  --dl-color-text-muted: #64748b;
+  --dl-color-text-inverse: #ffffff;
+
+  /* ==========================================================================
+       Typography
+       ========================================================================== */
+
+  --dl-font-family: "Inter", sans-serif;
+
+  --dl-font-size-xs: .75rem;
+  --dl-font-size-sm: .875rem;
+  --dl-font-size-md: 1rem;
+  --dl-font-size-lg: 1.125rem;
+  --dl-font-size-xl: 1.5rem;
+  --dl-font-size-2xl: 2rem;
+
+  --dl-font-weight-normal: 400;
+  --dl-font-weight-medium: 500;
+  --dl-font-weight-semibold: 600;
+  --dl-font-weight-bold: 700;
+
+  /* ==========================================================================
+       Spaces
+       ========================================================================== */
+
+  --dl-space-2xs: .25rem;
+  --dl-space-xs: .50rem;
+  --dl-space-sm: .75rem;
+  --dl-space-md: 1rem;
+  --dl-space-lg: 1.5rem;
+  --dl-space-xl: 2rem;
+  --dl-space-2xl: 3rem;
+
+
+  /* ==========================================================================
+       Radius
+       ========================================================================== */
+
+  --dl-radius-sm: .25rem;
+  --dl-radius-md: .50rem;
+  --dl-radius-lg: .75rem;
+  --dl-radius-xl: 1rem;
+  --dl-radius-pill: 9999px;
+
+  /* ==========================================================================
+       Shadows
+       ========================================================================== */
+
+  --dl-shadow-sm: 0 1px 3px rgba(0, 0, 0, .08);
+  --dl-shadow-md: 0 8px 20px rgba(0, 0, 0, .10);
+  --dl-shadow-lg: 0 16px 40px rgba(0, 0, 0, .15);
+
+  /* ==========================================================================
+       Transition
+       ========================================================================== */
+
+  --dl-transition-fast: .20s ease;
+  --dl-transition-normal: .30s ease;
+  --dl-transition-slow: .50s ease;
+  /* ==========================================================================
+       Z-index
+       ========================================================================== */
+
+  --dl-z-dropdown: 1000;
+  --dl-z-sticky: 1020;
+  --dl-z-fixed: 1030;
+  --dl-z-modal: 1040;
+  --dl-z-toast: 1050;
+  --dl-z-tooltip: 1060;
+  /* ==========================================================================
+       Icons
+       ========================================================================== */
+
+  --dl-icon-size-sm: 1rem;
+  --dl-icon-size-md: 1.5rem;
+  --dl-icon-size-lg: 2rem;
+  --dl-icon-size-xl: 3rem;
+
+}

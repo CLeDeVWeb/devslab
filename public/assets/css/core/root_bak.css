@@ -1,0 +1,167 @@
+/**
+ * ============================================================
+ * DevLab Design System
+ * Fichier : root.css
+ * Description : Variables globales
+ * ============================================================
+ */
+
+:root {
+
+    /*==========================================================
+      Couleurs principales
+    ==========================================================*/
+
+    --dl-color-primary:       #2563eb;
+    --dl-color-secondary:     #64748b;
+    --dl-color-success:       #16a34a;
+    --dl-color-warning:       #f59e0b;
+    --dl-color-danger:        #dc2626;
+    --dl-color-info:          #0ea5e9;
+
+    /*==========================================================
+      Niveaux de gris
+    ==========================================================*/
+
+    --dl-color-white:         #ffffff;
+
+    --dl-color-gray-50:       #f8fafc;
+    --dl-color-gray-100:      #f1f5f9;
+    --dl-color-gray-200:      #e2e8f0;
+    --dl-color-gray-300:      #cbd5e1;
+    --dl-color-gray-400:      #94a3b8;
+    --dl-color-gray-500:      #64748b;
+    --dl-color-gray-600:      #475569;
+    --dl-color-gray-700:      #334155;
+    --dl-color-gray-800:      #1e293b;
+    --dl-color-gray-900:      #0f172a;
+
+    /*==========================================================
+      Texte
+    ==========================================================*/
+
+    --dl-text-color:          var(--dl-color-gray-800);
+    --dl-text-muted:          var(--dl-color-gray-500);
+    --dl-text-light:          var(--dl-color-white);
+
+    /*==========================================================
+      Fonds
+    ==========================================================*/
+
+    --dl-bg-body:             var(--dl-color-gray-100);
+    --dl-bg-card:             var(--dl-color-white);
+    --dl-bg-hover:            var(--dl-color-gray-50);
+
+    /*==========================================================
+      Bordures
+    ==========================================================*/
+
+    --dl-border-color:        var(--dl-color-gray-300);
+    --dl-border-radius-xs:    4px;
+    --dl-border-radius-sm:    6px;
+    --dl-border-radius-md:    8px;
+    --dl-border-radius-lg:    12px;
+    --dl-border-radius-xl:    18px;
+
+    /*==========================================================
+      Ombres
+    ==========================================================*/
+
+    --dl-shadow-xs:           0 1px 2px rgba(0,0,0,.05);
+    --dl-shadow-sm:           0 2px 4px rgba(0,0,0,.08);
+    --dl-shadow-md:           0 4px 10px rgba(0,0,0,.10);
+    --dl-shadow-lg:           0 8px 24px rgba(0,0,0,.15);
+
+    /*==========================================================
+      Espacements
+    ==========================================================*/
+
+    --dl-space-xs:            .25rem;
+    --dl-space-sm:            .50rem;
+    --dl-space-md:            1rem;
+    --dl-space-lg:            1.5rem;
+    --dl-space-xl:            2rem;
+    --dl-space-xxl:           3rem;
+
+    /*==========================================================
+      Typographie
+    ==========================================================*/
+
+    --dl-font-family:         "Segoe UI", Roboto, Arial, sans-serif;
+
+    --dl-font-size-xs:        .75rem;
+    --dl-font-size-sm:        .875rem;
+    --dl-font-size-md:        1rem;
+    --dl-font-size-lg:        1.125rem;
+    --dl-font-size-xl:        1.50rem;
+    --dl-font-size-xxl:       2rem;
+
+    --dl-font-weight-light:   300;
+    --dl-font-weight-normal:  400;
+    --dl-font-weight-medium:  500;
+    --dl-font-weight-bold:    700;
+
+    --dl-line-height:         1.5;
+
+    /*==========================================================
+      Formulaires
+    ==========================================================*/
+
+    --dl-input-height:        38px;
+    --dl-input-padding-x:     .75rem;
+    --dl-input-padding-y:     .50rem;
+
+    /*==========================================================
+      Boutons
+    ==========================================================*/
+
+    --dl-btn-height:          38px;
+
+    /*==========================================================
+      Z-index
+    ==========================================================*/
+
+    --dl-z-dropdown:          1000;
+    --dl-z-sticky:            1020;
+    --dl-z-fixed:             1030;
+    --dl-z-modal:             1050;
+    --dl-z-tooltip:           1080;
+
+    /*==========================================================
+      Animations
+    ==========================================================*/
+
+    --dl-transition-fast:     .15s ease;
+    --dl-transition:          .25s ease;
+    --dl-transition-slow:     .40s ease;
+
+    /*==========================================================
+    Typographie
+    ==========================================================*/
+
+    --dl-font-size-2xs:      .6875rem;   /* 11px */
+    --dl-font-size-xs:       .75rem;     /* 12px */
+    --dl-font-size-sm:       .875rem;    /* 14px */
+    --dl-font-size-md:       1rem;       /* 16px */
+    --dl-font-size-lg:       1.125rem;   /* 18px */
+    --dl-font-size-xl:       1.50rem;    /* 24px */
+    --dl-font-size-xxl:      2rem;       /* 32px */
+    --dl-font-size-3xl:      2.50rem;    /* 40px */
+
+
+  --dl-color-success: #198754;
+  --dl-color-success-light: #e8f5ec;
+  --dl-color-success-border: #b8dfc7;
+
+  --dl-color-warning: #9a6700;
+  --dl-color-warning-light: #fff8e1;
+  --dl-color-warning-border: #ffe08a;
+
+  --dl-color-danger: #dc3545;
+  --dl-color-danger-light: #fdebec;
+  --dl-color-danger-border: #f5b5bc;
+
+  --dl-color-info: #0d6efd;
+  --dl-color-info-light: #e9f2ff;
+  --dl-color-info-border: #b6d3ff;
+}

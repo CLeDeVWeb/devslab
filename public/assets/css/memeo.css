@@ -1,0 +1,64 @@
+.achtung,.danger,.erfolg,.success,.warnung,.warning,.hinweis,.info {
+    text-align: justify;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.hinweis,.info {
+    color: var(--info-color);
+    background-color: var(--info-back);
+    border-left: 5px solid var(--info-border);
+}
+
+.erfolg,.success {
+    color: var(--success-color);
+    background-color: var(--success-back);
+    border-left: 5px solid var(--success-border);
+}
+
+.warnung,.warning {
+    color: var(--warning-color);
+    background-color: var(--warning-back);
+    border-left: 5px solid var(--warning-border);
+}
+
+.achtung,.danger {
+    color: var(--critical-color);
+    background-color: var(--critical-back);
+    border-left: 5px solid var(--critical-border);
+}
+
+.active {
+    color: #388E3C;
+    font-weight: 700;
+    /* background-color: var(--success-back); */
+}
+.outdated {
+    color: #FBC02D;
+    font-weight: 700;
+    /* background-color: var(--warning-back); */
+}
+.endless {
+    color: #D32F2F;
+    font-weight: 700;
+    /* background-color: var(--critical-back); */
+}
+:root {
+    --critical-color: #b30000;
+    --critical-back: #ffe5e5;
+    --critical-border: red;
+
+    --warning-color: #d67d00;
+    --warning-back: #fff3e0;
+    --warning-border: orange;
+
+    --info-color: #084298;
+    --info-back: #cfe2ff;
+    --info-border: blue;
+
+    --success-color: #0f5132;
+    --success-back: #d1e7dd;
+    --success-border: green;
+}

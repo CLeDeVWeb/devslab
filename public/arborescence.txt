@@ -1,0 +1,88 @@
+.
+├── arborescence.txt
+├── assets
+│   ├── css
+│   │   ├── components
+│   │   │   ├── badge.css
+│   │   │   ├── button.css
+│   │   │   ├── card.css
+│   │   │   ├── container.css
+│   │   │   ├── form.css
+│   │   │   ├── grid.css
+│   │   │   ├── intro.css
+│   │   │   ├── _layout.css
+│   │   │   ├── modal.css
+│   │   │   ├── navbar.css
+│   │   │   ├── project-card.css
+│   │   │   ├── projects.css
+│   │   │   ├── sections.css
+│   │   │   ├── table.css
+│   │   │   ├── tabs.css
+│   │   │   └── tag.css
+│   │   ├── core
+│   │   │   ├── animation.css
+│   │   │   ├── animations.css
+│   │   │   ├── layout.css
+│   │   │   ├── reset.css
+│   │   │   ├── root_bak.css
+│   │   │   ├── root.css
+│   │   │   ├── typography.css
+│   │   │   ├── utilities.css
+│   │   │   └── variables.css
+│   │   ├── devlab.css
+│   │   └── pages
+│   │       ├── contrats.css
+│   │       ├── dashboard.css
+│   │       ├── documents.css
+│   │       ├── interventions.css
+│   │       ├── messagerie.css
+│   │       ├── parametres.css
+│   │       ├── profil.css
+│   │       ├── sites.css
+│   │       └── tickets.css
+│   ├── fonts
+│   ├── img
+│   ├── js
+│   │   ├── app.js
+│   │   ├── components
+│   │   │   └── Modals.js
+│   │   ├── config.js
+│   │   ├── core
+│   │   │   └── EventBus.js
+│   │   ├── dashboard
+│   │   │   ├── dashboard.js
+│   │   │   ├── eventDashboard.js
+│   │   │   └── mainDashboard.js
+│   │   ├── layout
+│   │   │   ├── Logger.js
+│   │   │   ├── Navbar.js
+│   │   │   └── Sidebar.js
+│   │   ├── lib
+│   │   │   ├── Http.js
+│   │   │   └── Modal.js
+│   │   ├── plugins.js
+│   │   └── ticket
+│   └── plugins
+│       ├── bootstrap
+│       │   ├── css
+│       │   │   
+│       │   │   ap
+│       │   └── README.md
+│       ├── fontawesome
+│       │   ├── css
+│       │   │   ├
+│       │   ├── README.md
+│       │   └── webfonts
+│       │     
+│       ├── jquery
+│       │   ├── jquery.min.js
+│       │   └── README.md
+│       └── README.md
+├── docs
+│   └── components
+├── espace-client ---> (ca c'est un projet)
+│   ├── dashboard.php
+│   └── index.php
+└── index.php (----> c'est la page d'accueil la ou se trouve toutes les cards de mes futurs projet)
+
+26 directories, 125 files

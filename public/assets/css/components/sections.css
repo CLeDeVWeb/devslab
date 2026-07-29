@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+.dl-section {
+
+    padding-block: var(--dl-space-2xl);
+
+}
+
+.dl-section-header {
+
+    margin-bottom: var(--dl-space-xl);
+
+}
+
+.dl-section-title {
+
+    margin: 0 0 var(--dl-space-sm);
+
+    font-size: var(--dl-font-size-2xl);
+
+}
+
+.dl-section-subtitle {
+
+    margin: 0;
+
+    color: var(--dl-color-text-muted);
+
+}
