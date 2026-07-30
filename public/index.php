@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 require_once __DIR__.'/../init.php';
 
-$app = new DevLab\Core\Application();
+// $app = new DevLab\Core\Application();
 
-$app->run();
+// $app->run();
 ?>
 
 <!DOCTYPE html>

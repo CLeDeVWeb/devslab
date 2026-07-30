@@ -4,19 +4,8 @@ declare(strict_types=1);
 
 namespace DevLab\Core;
 
-/**
- * --------------------------------------------------------------------------
- * DevLab Framework
- * --------------------------------------------------------------------------
- * Autoloader PSR-4 simplifié
- *
- * Namespace :
- *      DevLab\Core\Database
- *
- * devient :
- *      _src/Core/Database.class.php
- * --------------------------------------------------------------------------
- */
+
+
 final class Autoloader
 {
 	/**
@@ -49,7 +38,7 @@ final class Autoloader
 		$relative = str_replace('\\', DIRECTORY_SEPARATOR, $relative);
 
 		// _src/Core/Database.class.php
-		$file = DL_ROOT. DIRECTORY_SEPARATOR. '_src'. DIRECTORY_SEPARATOR. $relative. '.php';
+		$file = ROOT_DIR. DIRECTORY_SEPARATOR. '_src'. DIRECTORY_SEPARATOR. $relative. '.php';
 
 		if (is_file($file)) {
 			require_once $file;

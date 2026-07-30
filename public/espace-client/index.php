@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../../init.php';
 
-use DevLab\Core\Application;
+// use DevLab\Core\Application;
 
-$app = new Application();
+// $app = new Application();
 
-$app->run();
+// $app->run();
 ?>
 
 <!DOCTYPE html>
