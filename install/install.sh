@@ -56,6 +56,7 @@ execute_sql()
         -e MYSQL_PWD="$MYSQL_PWD" \
         -i mysql \
         mysql \
+        --default-character-set=utf8mb4 \
         -h "$DB_HOST" \
         -P "$DB_PORT" \
         -u "$DB_USER" \
@@ -87,6 +88,7 @@ docker exec \
     -e MYSQL_PWD="$MYSQL_PWD" \
     -i mysql \
     mysql \
+    --default-character-set=utf8mb4 \
     -h "$DB_HOST" \
     -P "$DB_PORT" \
     -u "$DB_USER" \

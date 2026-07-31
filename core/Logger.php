@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-final class Logger
-{
+namespace DevLab\Core;
+
+final class Logger{
 	/**
 	 * Fichier de log.
 	 */

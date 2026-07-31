@@ -1,4 +1,6 @@
 use DEVLAB
+SET NAMES utf8mb4;
+
 INSERT INTO CLIENT
 (nom, prenom, email, telephone)
 VALUES

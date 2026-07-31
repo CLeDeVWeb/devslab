@@ -1,14 +1,16 @@
-import Http from '../lib/Http';
-import Modal from '../lib/Modal.js';
+import Http from '../../../assets/js/lib/Http.js'
+import Modal from '../../../assets/js/lib/Modal.js';
 
 
 const oDashboard = {
 
-	async load() {
+	async init() {
 
-		const oResult = await Http.get(...);
+		const oResult =  await Http.get('/request/initDashboard.php');
 
-		this.render(oResult);
+		console.log(oResult);
+
+		// this.render(oResult);
 
 	},
 

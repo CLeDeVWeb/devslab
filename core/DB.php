@@ -2,24 +2,30 @@
 
 declare(strict_types=1);
 
+namespace DevLab\Core;
+
+use PDO;
+use PDOException;
+use PDOStatement;
+// use Logger;
+
 final class DB {
 
 	private static ?PDO $oPDO = null;
 	private static bool $activeLog = false;
-
+	private const CONFIG_FILE = ROOT_DIR . '/config/database.php';
 	
 	private function __construct(){}
 
 	/**
 	 * Retourne la connexion PDO.
 	 */
-	private static function connect(): PDO
-	{
+	private static function connect(): PDO	{
 		if (self::$oPDO instanceof PDO) {
 			return self::$oPDO;
 		}
 
-		$aConfig = require dirname(__DIR__) . '/config/database.php';
+		$aConfig = require self::CONFIG_FILE;
 
 		$sDsn = sprintf(
 			'mysql:host=%s;dbname=%s;charset=%s',
@@ -47,9 +53,9 @@ final class DB {
 	 *
 	 * @return array
 	 */
-	public static function select( string $sSQL, array $aParams = [], ?string $sClass = null ): array {
+	public static function select( string $sSQL, array $params = [], ?string $sClass = null ): array {
 
-		$oStatement = self::prepareAndExecute($sSQL, $aParams);
+		$oStatement = self::prepareAndExecute($sSQL, $params);
 
 		if ($sClass !== null) {
 			$oStatement->setFetchMode(PDO::FETCH_CLASS, $sClass);
@@ -63,9 +69,9 @@ final class DB {
 	/**
 	 * Retourne un seul enregistrement.
 	 */
-	public static function selectOne( string $sSQL, array $aParams = [], ?string $sClass = null ): object|null {
+	public static function selectOne( string $sSQL, array $params = [], ?string $sClass = null ): object|null {
 
-		 $oStatement = self::prepareAndExecute($sSQL, $aParams);
+		 $oStatement = self::prepareAndExecute($sSQL, $params);
 
 		if ($sClass !== null) {
 			$oStatement->setFetchMode(PDO::FETCH_CLASS, $sClass);
@@ -86,29 +92,29 @@ final class DB {
 	 *
 	 * @return int Nombre de lignes affectées
 	 */
-	public static function execute( string $sSQL, array $aParams = [] ): int {
+	public static function execute( string $sSQL, array $params = [] ): int {
 
-		return self::prepareAndExecute($sSQL, $aParams)->rowCount();
+		return self::prepareAndExecute($sSQL, $params)->rowCount();
 
 	}
 
 	/**
 	 * @return int Identifiant créé
 	 */
-	public static function insert( string $sSQL, array $aParams = [] ): int {
-		self::prepareAndExecute($sSQL, $aParams);
+	public static function insert( string $sSQL, array $params = [] ): int {
+		self::prepareAndExecute($sSQL, $params);
 		return self::lastInsertId();
 	}
 
 
-	public static function update(string $sSQL,array $aParams = []): int {
-		$oStmt = self::prepareAndExecute($sSQL, $aParams);
+	public static function update(string $sSQL,array $params = []): int {
+		$oStmt = self::prepareAndExecute($sSQL, $params);
 	 	return $oStmt->rowCount();
 	}
 
 	
-	public static function delete(string $sSQL,array $aParams = []): int {
-		$oStmt = self::prepareAndExecute($sSQL, $aParams);
+	public static function delete(string $sSQL,array $params = []): int {
+		$oStmt = self::prepareAndExecute($sSQL, $params);
 	 	return $oStmt->rowCount();
 	}
 
@@ -144,16 +150,16 @@ final class DB {
 	 * Prépare et exécute une requête SQL.
 	 *
 	 * @param string $sSQL    Requête SQL
-	 * @param array  $aParams Paramètres de la requête
+	 * @param array  $params Paramètres de la requête
 	 *
 	 * @throws PDOException
 	 */
-	private static function prepareAndExecute( string $sSQL, array $aParams = [] ): PDOStatement {
+	private static function prepareAndExecute( string $sSQL, array $params = [] ): PDOStatement {
 		try {
 
 			$oStatement = self::connect()->prepare($sSQL);
 
-			$oStatement->execute($aParams);
+			$oStatement->execute($params);
 
 			if (self::$activeLog) {
 
@@ -161,7 +167,7 @@ final class DB {
 					sprintf(
 						"SQL :\n%s\n\nPARAMS :\n%s",
 						$sSQL,
-						json_encode( $aParams, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE )
+						json_encode( $params, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE )
 					),
 					Logger::TYPE_SQL
 				);
@@ -181,7 +187,7 @@ final class DB {
 						$e->getLine(),
 						$e->getMessage(),
 						$sSQL,
-						json_encode($aParams, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
+						json_encode($params, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
 				),
 				Logger::TYPE_SQL
 			);
